@@ -27,7 +27,6 @@
     border: 2px solid #14274A;
     border-radius: 15px;
     position: relative;
-    
 }
 
 .main__appartment-card-image {
@@ -59,16 +58,47 @@
 
 }
 
-.main__appartment-card-footer img {
+.main__appartment-description-more-button {
     width: 50px;
     height: 50px;
+    background-color: #E0B973;
+    border-radius: 50%;
+    position: relative;
+}
+
+.main__appartment-description-more-button::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 2px);
+    right: calc(50% - 14px);
+    width: 28px;
+    height: 3px;
+}
+
+.main__appartment-description-more-button-decoreated {
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 2px);
+    right: calc(50% - 14px);
+    width: 28px;
+    height: 3px;
+    transition: transform 1s;
+    transform: rotate(90deg);
+}
+
+.main__appartment-description-more-button-decoreated_close {
+    transition: transform 1s;
+    transform: rotate(0);
 }
 
 .main__appartment-description {
     display: flex;
     align-items: center;
     gap: 25px;
+    cursor: pointer;
 }
+
 
 .main__appartment-description p {
     font-weight: bold;
@@ -87,19 +117,26 @@
 
 
 .main__appartment-about {
-    border: 2px solid #14274A;
+    outline: none;
+    margin: 0;
+    padding: 0;
     border-radius: 15px;
     text-align: center;
-    margin: 0 54px 54px 54px;
-    padding: 25px;
     display: flex;
     flex-direction: column;
     gap:25px;
     font-size: 24px;
-    
-    
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.6s;
+}
 
-    
+.main__appartment-about_open {
+    outline: 2px solid #14274A;
+    margin: 0 54px 54px 54px;
+    padding: 25px;
+    transition: all 0.6s;
+    max-height: 3000px;
 }
 
 .main__appartment-about h3 {

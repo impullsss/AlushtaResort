@@ -1,26 +1,10 @@
 (function () {
-    const appartmentCardElement = document.querySelector('.');
+    const aboutElement = document.querySelector('.main__appartment-about');
+    const decorateButtonElement = document.querySelector('.main__appartment-description-more-button-decoreated');
     const descriptionElement = document.querySelector('.main__appartment-description');
 
     descriptionElement.addEventListener('click', () => {
-        
-
+      aboutElement.classList.toggle('main__appartment-about_open');
+      decorateButtonElement.classList.toggle('main__appartment-description-more-button-decoreated_close');
     })
-    function getAboutBlock () {
-        return `<div class="main__appartment-about"> 
-        <h3>Комфорт и удобства</h3>
-        <p>Наши студии представляют собой идеальное сочетание комфорта и функциональности для вашего пребывания. Каждая студия обустроена с учетом ваших потребностей, предлагая уютное пространство для отдыха и работы. Современный дизайн и удобства делают наши студии идеальным выбором как для краткосрочного пребывания, так и для длительной аренды. Расположенные в удобных районах, они предоставляют легкий доступ к главным достопримечательностям и удобствам города.
-        </p>
-        <h3>Преимущества</h3>
-        <ul>
-          <li>Уютные и функциональные интерьеры, обеспечивающие комфортное пребывание.
-          </li>
-          <li>Полностью оборудованные кухни, позволяющие готовить собственные блюда и экономить на питании.
-          </li>
-          <li>Бесплатный Wi-Fi и удобные рабочие зоны для тех, кто работает удаленно или путешествует по делам.
-          </li>
-          <li>Различные варианты размещения, включая студии с одной или двумя кроватями, чтобы удовлетворить потребности каждого гостя.</li>
-        </ul>
-      </div>`
-    }
 }())
