@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/relax.css" />
     <link rel="stylesheet" href="./styles/apartment.css" />
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="./js/appatment.js"></script>
     <!-- <link rel="shortcut icon" href="images/" type="image/x-icon"> -->
     <title>Alushta Resort</title>
@@ -60,8 +62,26 @@
 
       <div class="main__appartment-card">
         <div class="main__appartment-card-image">
-          <div class="decorated-zone"></div>
-          <img src="./images/apartment-images/studios/studio-1.png" alt="Фото студии">
+
+          <div class="swiper mySwiper">
+            <div class="swiper-button-next darker"></div>
+            <div class="swiper-button-prev darker"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/studios/1.jpg" alt="Наши студии">
+              </div>
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/studios/2.jpg" alt="Наши студии">
+              </div>
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/studios/3.jpg" alt="Наши студии">
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="main__appartment-card-title">
           <p>СТУДИИ</p>
@@ -94,9 +114,28 @@
       </div>
 
       <div class="main__appartment-card">
+        
         <div class="main__appartment-card-image">
-          <div class="decorated-zone"></div>
-          <img src="./images/apartment-images/one-room/one-room-1.jpg" alt="Фото однокомнатных квартир">
+
+          <div class="swiper mySwiper">
+            <div class="swiper-button-next darker"></div>
+            <div class="swiper-button-prev darker"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/one-room/1.jpg" alt="однокомнатная квартира">
+              </div>
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/one-room/2.jpg" alt="однокомнатная квартира">
+              </div>
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/one-room/2.jpg" alt="однокомнатная квартира">
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="main__appartment-card-title">
           <p>Однокомнатные квартиры</p>
@@ -130,9 +169,28 @@
 
 
       <div class="main__appartment-card">
+
         <div class="main__appartment-card-image">
-          <div class="decorated-zone"></div>
-          <img src="./images/apartment-images/two-room/two-room-1.jpg" alt="Фото двухкомнатных квартир">
+
+          <div class="swiper mySwiper">
+            <div class="swiper-button-next darker"></div>
+            <div class="swiper-button-prev darker"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/two-room/2.jpg" alt="двухкомнатная квартира">
+              </div>
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/two-room/3.jpg" alt="двухкомнатная квартира">
+              </div>
+              <div class="swiper-slide">
+                <div class="decorated-zone"></div>
+                <img src="./images/apartment-images/two-room/4.jpg" alt="двухкомнатная квартира">
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="main__appartment-card-title">
           <p>ДВУХКОМНАТНЫЕ</p>
@@ -218,6 +276,15 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
 

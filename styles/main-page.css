@@ -1,3 +1,6 @@
+:root {
+    --bg-image:url(../images/main-page.png);
+}
 
 .main {
     display: flex;

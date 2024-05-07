@@ -1,3 +1,8 @@
+:root {
+    --bg-image:url(../images/apartment-image.jpg);
+}
+
+
 .main {
     padding: 160px 165px 160px 165px;
     display: flex;

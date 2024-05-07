@@ -5,10 +5,13 @@
     justify-content: space-between;
     color: white;
     max-height: 1020px;
-    background-image: url(../images/header_photo_1.png);
+    background-image: var(--bg-image);
     font-size: 25px;
     position: relative;
     
+    background-size: cover; /* Растянуть изображение, чтобы оно покрывало всю область фона */
+    background-repeat: no-repeat; /* Запретить повторение фонового изображения */
+    background-position: center center; /* Положение изображения по центру */
 }
 
 
