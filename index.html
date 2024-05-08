@@ -99,26 +99,41 @@
         </div>
       </div>
 
-      <div class="main__relax">
-        <div class="main__relax-content">
-          <h2>Расслабьтесь</h2>
-          <p>
-            <span class="quote">
-              "Отдых — это искусство, которое нужно учиться <br />
-              делать так же, как и работать."</span
-            >
-          </p>
-          <p>Джон Бертранд</p>
+      <div class="main__relax swiperForRelax">
+        <h2>Расслабьтесь</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="main__relax-content">
+                <p>
+                  <span class="quote">
+                    "Отдых — это искусство, которое нужно учиться <br />
+                    делать так же, как и работать."</span
+                  >
+                </p>
+                <p>Джон Бертранд</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main__relax-content">
+                <p>
+                  <span class="quote">
+                    "Отдых — это искусство, которое нужно учиться <br />
+                    делать так же, как и работать."</span
+                  >
+                </p>
+                <p>Джон Бертранд</p>
+              </div>
+            </div>
+          </div>
+          <div class="main__relax-slider">
+            <button class="main__relax-slider-button back main__relax-slider-button-back">
+              <img src="svg/arrow.svg" alt="" />
+            </button>
+            <button class="main__relax-slider-button next main__relax-slider-button-next">
+              <img src="svg/arrow.svg" alt="" />
+            </button>
+          </div>
         </div>
-        <div class="main__relax-slider">
-          <button class="main__relax-slider-button back">
-            <img src="svg/arrow.svg" alt="" />
-          </button>
-          <button class="main__relax-slider-button next">
-            <img src="svg/arrow.svg" alt="" />
-          </button>
-        </div>
-      </div>
 
     </main>
     <footer class="footer">
@@ -178,6 +193,13 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiperForRelax = new Swiper(".swiperForRelax", {
+        loop: true,
+        navigation: {
+          nextEl: ".main__relax-slider-button-back",
+          prevEl: ".main__relax-slider-button-next",
         },
       });
     </script>
