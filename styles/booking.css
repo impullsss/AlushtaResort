@@ -59,6 +59,9 @@
 
 .input-message {
     height: 352px;
+    max-width: 570px;
+    word-break: break-all;
+    outline: 1px solid black;
 }
 
 .input-button {
