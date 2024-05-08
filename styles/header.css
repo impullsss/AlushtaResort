@@ -56,6 +56,10 @@
     gap:20px;
 }
 
+.header__navigation-item_active {
+    text-decoration: underline;
+}
+
 .header__booking {
 display: flex;
 justify-content: center;
