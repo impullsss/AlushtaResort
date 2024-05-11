@@ -4,7 +4,8 @@
     const messageFieldFormElem = document.querySelector('.main__booking-form-message');
     const buttonFormElem = document.querySelector('.main__booking-form-button');
 
-    buttonFormElem.addEventListener('click', () => {
+    buttonFormElem.addEventListener('click', (event) => {
+        if (event.target.id !== "send" ) return;
         const bookingForm = new FormData();
         bookingForm.append('name', nameFieldFormElem.value);
         bookingForm.append('email', emailFieldFormElem.value);
@@ -25,7 +26,7 @@
     })
 
     function getLoaderButtonHTML() {
-        return `<button type="button">
+        return `<button id="send" type="button">
                     <div class="loader"></div>
                 </button>`
     }
@@ -36,7 +37,7 @@
             '<span class="main__booking-form-status main__booking-form-status_error">Error</span>'
             : '<span class="main__booking-form-status main__booking-form-status_success">Ok</span>'
         }
-                <button type="button">
+                <button id="send" type="button">
                     Отправить
                 </button>`
     }
