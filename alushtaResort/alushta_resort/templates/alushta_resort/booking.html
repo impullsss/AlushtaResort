@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./fonts/font.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/header-booking.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/relax.css" />
-    <link rel="stylesheet" href="./styles/booking.css" />
+    <link rel="stylesheet" href="./static/fonts/font.css" />
+    <link rel="stylesheet" href="./static/styles/loader.css" />
+    <link rel="stylesheet" href="./static/styles/global.css" />
+    <link rel="stylesheet" href="./static/styles/header-booking.css" />
+    <link rel="stylesheet" href="./static/styles/footer.css" />
+    <link rel="stylesheet" href="./static/styles/relax.css" />
+    <link rel="stylesheet" href="./static/styles/booking.css" />
+    <script defer src="./static/js/booking.js"></script>
     
     <!-- <link rel="shortcut icon" href="images/" type="image/x-icon"> -->
     <title>Alushta Resort</title>
@@ -22,10 +24,10 @@
           <p>Resort</p>
         </div>
         <nav class="header__navigation">
-          <a href="./index.html">Главная</a>
-          <a href="./rest.html">Отдых</a>
-          <a href="./apartment.html">Аппартаменты</a>
-          <a class="header__navigation-item_active" href="./booking.html">Бронь</a>
+          <a href="./index">Главная</a>
+          <a href="./rest">Отдых</a>
+          <a href="./apartment">Аппартаменты</a>
+          <a class="header__navigation-item_active" href="./booking">Бронь</a>
         </nav>
       </div>
       <div class="header__info">
@@ -53,21 +55,24 @@
           <p>email: impullsss@mail.ru</p>
         </div>
           <form class="main__booking-form">
-            <div >
+            <div>
               <label for="name">Имя</label><br />
-              <input class="input-text" type="text" id="name" name="name" /><br />
+              <input class="input-text main__booking-form-name" type="text" id="name" name="name" /><br />
             </div>
             <div>
               <label for="email">Электронный адрес</label><br />
-              <input class="input-text" type="email" name="email" id="email" /><br />
+              <input class="input-text main__booking-form-email" type="email" name="email" id="email" /><br />
             </div>
             <div>
               <label for="text">Сообщение</label><br />
-              <div class="input-message" contenteditable="true"></div>
-              </div>
-              <div class="input-button">
-                <button type="button">Отправить</button>
-              </div>
+              <div class="input-message main__booking-form-message" contenteditable="true"></div>
+            </div>
+            <div class="input-button main__booking-form-button">
+              <span class="main__booking-form-status"></span>
+              <button type="button">
+                  Отправить
+              </button>
+            </div>
           </form>
       </div>
     </main>
@@ -85,8 +90,8 @@
         </p>
       </div>
       <div class="footer__contacts">
-        <a href="./index.html">О нас</a>
-        <a href="./booking.html">Контакты</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
         <a href="#"
           >Правила и <br />
           условия</a
@@ -94,16 +99,16 @@
       </div>
       <div class="footer__media">
         <div class="footer__media-content">
-          <img src="./svg/facebook.svg" alt="" />
+          <img src="./static/svg/facebook.svg" alt="" />
           <a href="#">facebook</a>
         </div>
         <div class="footer__media-content">
-          <img src="./svg/twitter.svg" alt="" />
+          <img src="./static/svg/twitter.svg" alt="" />
 
           <a href="#">twitter</a>
         </div>
         <div class="footer__media-content">
-          <img src="./svg/instagram.svg" alt="" />
+          <img src="./static/svg/instagram.svg" alt="" />
           <a href="#">instagram</a>
         </div>
       </div>
