@@ -34,8 +34,8 @@
     function getSendButtonHTML(isError) {
         return `
         ${isError ? 
-            '<span class="main__booking-form-status main__booking-form-status_error">Error</span>'
-            : '<span class="main__booking-form-status main__booking-form-status_success">Ok</span>'
+            '<span class="main__booking-form-status main__booking-form-status_error">Введите корректно email</span>'
+            : '<span class="main__booking-form-status main__booking-form-status_success">Сообщение отправлено</span>'
         }
                 <button id="send" type="button">
                     Отправить
