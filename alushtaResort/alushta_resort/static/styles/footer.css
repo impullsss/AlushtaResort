@@ -62,11 +62,11 @@
   }
 
   .footer__subscribe-button {
-    padding: 16px 27px 16px 27px;
+    padding: 14px 25px 14px 25px;
     color: #000;
     border-radius: 5px;
     background: #E0B973;
-    transform: translateX(-15px);
+    /* transform: translateX(-15px); */
     font-weight: bold;
   }
   .footer__subscribe-placeholder {
