@@ -72,3 +72,25 @@
   .footer__subscribe-placeholder {
     display: flex;
   }
+
+  .footer__subscribe-form {
+    position: relative;
+  }
+
+  .footer__subscribe-notification {
+    display: none;
+    position: absolute;
+    bottom: 108%;
+  }
+
+  .footer__subscribe-notification_success {
+    color: green;
+  }
+
+  .footer__subscribe-notification_error {
+    color: red;
+  }
+
+  .footer__subscribe-notification_visable {
+    display: block;
+  }
